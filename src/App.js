@@ -1,5 +1,7 @@
 // import logo from './logo.svg';
-import './App.css';
+
+import Navbar from './Navbar';
+import Home from './Home';
 
 function App() { 
   const myTitle = "Hello Reacters"
@@ -9,9 +11,11 @@ function App() {
     position: 'CDM',
   }
   return (
+    
     <div className="App">
+      <Navbar />
       <div className="content">
-        <h1>{myTitle}</h1>
+        <Home />
         <p>{germanPlayers.name} is a {germanPlayers.position} who plays for {germanPlayers.club}</p>
       </div>
     </div>

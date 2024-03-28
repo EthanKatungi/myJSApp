@@ -1,7 +1,23 @@
 const Home = () => {
+
+    const handleClick = () => {
+        return (
+            alert('Hello World')
+        );
+    }
+    const handleClickAgain = (name) => {
+        return (
+            alert('Hello' + name)
+        );
+    }
+     
     return (
         <div className="home">
-            <h1>Homepage</h1>
+            <h2>Homepage</h2>
+            <button onClick={handleClick}>Click me</button>
+            <button onClick={() => {  //the () => {} is an anonymous function
+                handleClickAgain('Ethan')
+            }}></button>
         </div>
     );
 }

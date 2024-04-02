@@ -8,7 +8,7 @@ function App() {
   const germanPlayers = {
     name: 'Joshua Kimmich',
     club: 'Bayern',
-    position: 'CDM',
+    position: 'F9',
   }
   return (
     
